@@ -26,26 +26,25 @@ void loop(void)
   u8x8.print("mensaje");
   Serial.println(" u8x8.print ");
   delay(2000);
-  u8x8.clearDisplay();
+  u8x8.clear();
 
   u8x8.setFont(u8x8_font_inb21_2x4_f);
   // fonts: https://github.com/olikraus/u8g2/wiki/fntlist8x8
   u8x8.drawString(0,0,"mensaje");
   Serial.println(" u8x8.drawString ");
   delay(2000);
-  u8x8.clearDisplay();
+  u8x8.clear();
 
   u8x8.setFont(u8x8_font_courB18_2x3_f);
   u8x8.setCursor(0, 0);
   u8x8.draw1x2String(0,0,"mensaje");
   Serial.println(" u8x8.draw1x2String ");
   delay(2000);
-  u8x8.clearDisplay();
-
+  u8x8.clear();
 
   u8x8.setFont(u8x8_font_chroma48medium8_r);
   u8x8.draw2x2String(0, 0, "mensaje");
   Serial.println(" u8x8.draw2x2String ");
   delay(2000);
-  u8x8.clearDisplay();
+  u8x8.clear();
 }
